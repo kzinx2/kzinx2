@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Vídeos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #444;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+        }
+        .video-card {
+            width: 320px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .video-card iframe {
+            width: 100%;
+            height: 180px;
+            border: none;
+        }
+        .video-card h2 {
+            font-size: 1.1rem;
+            margin: 10px;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <h1>Catálogo de Vídeos</h1>
+    <div class="container">
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/No6n6r5INkU" allowfullscreen></iframe>
+            <h2>Título do Vídeo 1</h2>
+        </div>
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/_YVbIcLgIBA" allowfullscreen></iframe>
+            <h2>Título do Vídeo 2</h2>
+        </div>
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/P7NNEYhbW7s" allowfullscreen></iframe>
+            <h2>Título do Vídeo 3</h2>
+        </div>
+    </div>
+</body>
+</html>
